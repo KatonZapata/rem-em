@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: fuente1;
+    src: url(fuentes/Milk\ Cream.otf);
+}
+html{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: fuente1;
+    font-size: 16px;
+}
+h1{
+    font-size: 4rem;
+}
+header,footer{
+    background-color: blue;
+    display: flex;
+    align-items: center;/* alineacion horizontal */
+    justify-content: space-around;/* alineacion vertical */
+}
+img{
+    width: 100%;
+}
+.logo {
+    width: 150px;
+    padding: 10px;
+}
+.logo img{
+    border-radius: 50%;
+    border: 2px solid black;
+}
+nav{
+    background-color: gray;
+    padding: 10px;
+}
+nav a{
+    background-color: blue;
+    color: beige;
+    padding: 6px 10px;
+    text-decoration: none;
+    box-shadow: 4px 5px 4px 1px rgb(22, 22, 22);
+    border-radius: 15px;
+}
+nav a:hover{
+    background-color: beige;
+    color: blue;
+}
+main{
+   /*  background-color: brown;*/
+    min-height: 100vh;
+    background-image: url(imagenes/fondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0;
+   /*  background: linear-gradient(blue,green); */
+}
+.cuadro-px{
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+    margin: 25px auto;
+    background-color: rgba(245, 245, 220, 0.1);
+    border: 2px solid black;
+    color: white;
+}
+.cuadro-rem{
+    width: 31.25rem;
+    height: 21.875rem;
+    padding: 1.25rem;
+    margin: 1.5625rem auto;
+    background-color:  rgba(245, 245, 220, 0.1);
+    border: .125rem solid black;
+    color: white;
+}
+.em{
+    font-size: 30px;
+}
+.cuadro-em{
+    width: 31.25em;
+    height: 21.875em;
+    padding: 1.25em;
+    margin: 1.5625em auto;
+    background-color:  rgba(245, 245, 220, 0.1);
+    border: .125em solid black;
+    color: white;
+}
+.columnas{
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    justify-content: space-around;
+}
+.columnas .dos {
+    width: 30%;
+    
+}
